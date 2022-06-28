@@ -1,0 +1,79 @@
+* {
+    /* Colors */
+    --cl-light-blue-1: #f6faff;
+    --cl-light-blue-2: #b7e5ff;
+    --cl-dark-blue: #001d6e;
+    --cl-white: #ffffff;
+  
+    /* Font sizes */
+    --fs-xs: 0.875rem;
+    --fs-sm: 1rem;
+    --fs-lg: 2.5rem;
+    --fs-xl: 3.75rem;
+  
+    /* Circle dimensions */
+    --circle-dimension-1: 60px;
+    --circle-dimension-2: 70px;
+    --circle-dimension-3: 80px;
+  
+    /* Circle blur */
+    --circle-blur: 40px;
+  
+    /* Global styles */
+    font-family: Poppins, sans-serif;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  body {
+    background-color: var(--cl-light-blue-1);
+  }
+  
+  .header {
+    padding-block: 3rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+  }
+  
+  .logo {
+    width: 75px;
+  }
+
+  /* faq */
+
+  details{
+    padding: 2% 5%;
+    margin: 1% 8%;
+    font-family: Poppy;
+    border: 0.5px solid rgba(0,29,110,0.43);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+details[open] > summary {
+    margin-bottom: 0.5rem;
+}
+ 
+details > summary {
+    list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+details > summary::before {
+    content: '+';
+    font-weight:bolder;
+    font-size: 25px;
+    padding-right: 1%;
+    color: var(--cl-dark-blue);
+}
+
+details[open] > summary::before {
+    content: '-';
+}
