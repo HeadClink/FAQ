@@ -77,3 +77,13 @@ details > summary::before {
 details[open] > summary::before {
     content: '-';
 }
+
+.faq-title{
+    margin: 1% 8%;
+    margin-bottom: 3%;
+    font-family: "Baloo Da 2", sans-serif !important;
+    font-size: 25px;
+    color:var(--cl-dark-blue);
+    text-decoration: underline;
+   text-underline-offset: 2px ;
+}
